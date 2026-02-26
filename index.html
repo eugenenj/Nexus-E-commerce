@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus | Modern Tech Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="index.html" aria-label="Nexus home">
+        <span class="logo-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="logo-text">Nexus</span>
+      </a>
+      <button class="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="products.html" data-nav="products">Products</a></li>
+        <li><a href="compare.html" data-nav="compare">Compare</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        <li><a href="faq.html" data-nav="faq">FAQ</a></li>
+        <li><a href="cart.html" data-nav="cart">Cart <span id="cartCount" class="cart-badge">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div>
+        <p class="eyebrow">Premium Technology, Designed for Real Life</p>
+        <h1>Elevate your digital experience with Nexus.</h1>
+        <p class="hero-subtitle">Discover thoughtfully selected devices for creators, professionals, and gamers—wrapped in a minimalist shopping experience.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn btn-primary">Shop Products</a>
+          <a href="compare.html" class="btn btn-secondary">Compare Devices</a>
+        </div>
+      </div>
+      <div class="hero-feature-card">
+        <h3>Nexus Nova X</h3>
+        <p>Flagship smartphone with edge-to-edge OLED brilliance.</p>
+        <ul>
+          <li>144Hz Adaptive Display</li>
+          <li>5,200 mAh SmartCell battery</li>
+          <li>ProVision AI camera array</li>
+        </ul>
+        <button class="btn btn-primary" data-add-to-cart="phone-1">Add to Cart</button>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <h2>Popular Categories</h2>
+        <p>Everything from everyday productivity to high-performance gaming setups.</p>
+      </div>
+      <div class="category-grid">
+        <article class="category-card"><h3>Smartphones</h3><p>Powerful mobile devices with premium camera systems.</p></article>
+        <article class="category-card"><h3>Gaming Consoles</h3><p>Immersive gameplay with 4K and high frame-rate support.</p></article>
+        <article class="category-card"><h3>Monitors</h3><p>Color-accurate and fast-refresh displays for work and play.</p></article>
+        <article class="category-card"><h3>Gaming Laptops</h3><p>Desktop-class performance in a portable package.</p></article>
+        <article class="category-card"><h3>Computer Mice</h3><p>Precision peripherals engineered for comfort and speed.</p></article>
+        <article class="category-card"><h3>Keyboards</h3><p>Tactile and silent mechanical options for all users.</p></article>
+      </div>
+    </section>
+
+    <section class="container section split-highlight">
+      <div>
+        <h2>Why customers choose Nexus</h2>
+        <p>We blend expert-curated hardware, transparent policies, and clean design so you can shop with confidence.</p>
+      </div>
+      <div class="stats-grid">
+        <article><h3>24/7</h3><p>Support for orders and product guidance</p></article>
+        <article><h3>2-Year</h3><p>Standard warranty on select flagship products</p></article>
+        <article><h3>Fast</h3><p>Express shipping available in major cities</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Nexus Technologies. Built for innovation.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="X">X</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <section class="chatbot" aria-label="Nexus assistant">
+    <button class="chatbot-toggle" aria-label="Open chatbot">💬</button>
+    <div class="chatbot-panel" hidden>
+      <div class="chatbot-header">Nexus Assistant</div>
+      <div class="chatbot-messages" id="chatMessages">
+        <p class="bot-msg">Hi! Ask about shipping, delivery, returns, warranty, or payment methods.</p>
+      </div>
+      <div class="chatbot-input-row">
+        <input id="chatInput" type="text" placeholder="Type a question..." />
+        <button id="chatSend">Send</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus | Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="cart">
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="index.html"><span class="logo-mark"><span></span><span></span><span></span></span><span class="logo-text">Nexus</span></a>
+      <button class="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="products.html" data-nav="products">Products</a></li>
+        <li><a href="compare.html" data-nav="compare">Compare</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        <li><a href="faq.html" data-nav="faq">FAQ</a></li>
+        <li><a href="cart.html" data-nav="cart">Cart <span id="cartCount" class="cart-badge">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section">
+    <div class="section-heading">
+      <h1>Your Cart</h1>
+      <p>Review selected products and proceed when you are ready.</p>
+    </div>
+    <section id="cartItems" class="cart-list"></section>
+    <section class="cart-summary panel">
+      <h2>Order Summary</h2>
+      <p>Total: <strong id="cartTotal">$0</strong></p>
+      <button class="btn btn-primary">Checkout</button>
+      <button id="clearCart" class="btn btn-secondary" type="button">Clear Cart</button>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-content"><p>© 2026 Nexus Technologies. Built for innovation.</p><div class="social-links"><a href="#">Instagram</a><a href="#">X</a><a href="#">LinkedIn</a></div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
